@@ -34,3 +34,57 @@ body {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+header ul {
+  display: flex;
+  gap: 2.2em;
+}
+
+header ul li a {
+  color: black;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+section.hero {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+p.subhead {
+  font-size: 2rem;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.phone {
+  width: 90%;
+  margin-top: 5em;
+  position: relative;
+  z-index: 2;
+}
