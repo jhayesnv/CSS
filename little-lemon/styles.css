@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #495E57;
+    --color-secondary: #F4CE14;
+    --color-dark: #FFF;
+    --color-light: #000;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    background-color: #EDEDED;
+}
+
+/* header section */
+
+header {
+    text-align: center;
+    margin-top: var(--margin-top);
+    position: relative;
+    color: var(--color-light);
+}
+
+header .logo img {
+    margin-top: 3rem;
+    height: 20rem;
+    width: 72rem;
+}
+
+header .logo p {
+    margin-top: -6.5rem;
+    font-size: 1.2rem;
+    margin-left: 6rem;
+    font-weight: 400;
+}
+
+/* navbar section */
+
+nav {
+    margin-top: 3rem;
+    background: var(--color-primary);
+    padding: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.navbar ul a {
+    list-style-type: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.navbar ul a:hover {
+    color: var(--color-secondary);
+    transition: 0.5s all;
+}
+
+/* main section */
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "promotional promotional promotional"
+        "info1 info2 info3";
+    gap: 3rem 9rem;
+}
+
+.promotional {
+    grid-area: promotional;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    height: 45rem;
+}
+
+.promotional img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0.6;
+    transform: scaleX(-1);
+}
+
+.promotional .overlay {
+    position: absolute;
+    top: 35rem;
+    left: 4rem;
+    text-align: left;
+}
+
+.promotional .overlay h2 {
+    width: 350px;
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.promotional .overlay p {
+    width: 450px;
+    font-size: 2.4rem;
+}
+
+article {
+    text-align: justify;
+    height: 100%;
+}
+
+article p > a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+article p > a:hover {
+    color: var(--color-light);
+    transition: 0.3s all ease;
+}
+
+article.info1 {
+    grid-area: info1;
+    padding: 1rem;
+    background-color: primary;
+}
+
+article.info1 img {
+    height: 80px;
+    width: 80px;
+}
+
+article.info1 .info-img {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+article.info1 h2 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+article.info1 p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+article.info2 {
+    grid-area: info2;
+    padding: 1rem;
+}
+
+article.info2 img {
+    height: 80px;
+    width: 80px;
+}
+
+article.info2 .info-img {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+article.info2 h2 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+article.info2 p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+article.info3 {
+    grid-area: info3;
+    padding: 1rem;
+}
+
+article.info3 img {
+    height: 80px;
+    width: 80px;
+}
+
+article.info3 .info-img {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+article.info3 h2 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+}
+
+article.info3 p {
+    font-size: 1.4rem;
+}
+
+/* Footer Section  */
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10rem ;
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: var(--color-primary);
+    justify-content: space-evenly;
+}
+
+footer .footer-logo > img {
+    margin-top: 2rem;
+    height: 80px;
+    width: 60px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 3px 4px var(--color-light);
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: var(--color-dark);
+    align-self: flex-end;
+    font-weight: 400;
+}

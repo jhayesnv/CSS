@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Little Lemon">
+    <meta name="description"
+        content="A family-owned Mediterranean restaurant based in Chicago, Illinois, serving traditional Italian, Greek, and Turkish recipes with a modern twist.">
+    <meta name="keywords" content="Mediterranean, Traditional, Restaurant">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Joshua Hayes">
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:site_name" content="Little Lemon">
+    <meta property="og:url" content="">
+    <meta property="og:description"
+        content="A family-owned Mediterranean restaurant based in Chicago, Illinois, serving traditional Italian, Greek, and Turkish recipes with a modern twist.">
+    <meta property="og:type" content=restaurant>
+    <meta property="og:image" content="">
+    <title>Little-Lemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Asset 16@4x.png" alt="Little Lemon logo">
+            <p>Rustic, traditional, quality Mediterranean cuisine in Chicago, Illinois</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <a href="index.html" class="active">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Menu</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="wrapper">
+            <article class="promotional">
+                <img src="assets/mediterranean.jpg" alt="Mediterranean food image">
+                <div class="overlay">
+                    <h2>Enjoy 30% off on your first visit!</h2>
+                    <p>Just mention the code FIRSTOFF30 when you stop by anytime from March to April.</p>
+                </div>
+            </article>
+            <article class="info1">
+                <div class="info-img">
+                    <img src="assets/salad.png" alt="Little Lemon logo">
+                </div>
+                <h2>Seasonal Menu Items</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius dolor hic fuga odio
+                    provident voluptatibus animi, veniam quam, perspiciatis consequuntur rerum optio delectus error
+                    aliquid vitae soluta quibusdam modi corrupti! Saepe alias id hic nisi at excepturi
+                    necessitatibus, ipsum eius, aliquam eveniet ea voluptatem placeat veniam eligendi recusandae
+                    provident sed voluptatibus sit. Odit ut placeat fuga libero.</p>
+                <p><a href="#">View all menu items (15)</a></p>
+
+            </article>
+            <article class="info2">
+                <div class="info-img">
+                    <img src="assets/schedule.png" alt="Little Lemon logo">
+                </div>
+                <h2>Book a Table</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius dolor hic fuga odio
+                    provident voluptatibus animi, veniam quam, perspiciatis consequuntur rerum optio delectus error
+                    aliquid vitae soluta quibusdam modi corrupti! Saepe alias id hic nisi at excepturi
+                    necessitatibus, ipsum eius, aliquam eveniet ea voluptatem placeat veniam eligendi recusandae
+                    provident sed voluptatibus sit. Odit ut placeat fuga libero.</p>
+                <p><a href="#">Make a reservation</a></p>
+            </article>
+            <article class="info3">
+                <div class="info-img">
+                    <img src="assets/clock.png" alt="Little Lemon logo">
+                </div>
+                <h2>Hours of Operation</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius dolor hic fuga odio
+                    provident voluptatibus animi, veniam quam, perspiciatis consequuntur rerum optio delectus error
+                    aliquid vitae soluta quibusdam modi corrupti! Saepe alias id hic nisi at excepturi
+                    necessitatibus.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/Asset 20@4x.png" alt="Little Lemon logo">
+        </div>
+        <div class="copyright">
+            &copy; Little Lemon <span id="today"></span>
+        </div>
+    </footer>
+    <script>
+        let today = new Date().getFullYear();
+        document.getElementById('today').innerHTML = today;
+    </script>
+</body>
+
+</html>
