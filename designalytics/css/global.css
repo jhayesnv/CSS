@@ -1,11 +1,3 @@
-:root {
-  --primary-color: #5E85F8;
-  --secondary-color: #292B31;
-  --link-color: #BAC2D9;
-  --border-color: #464A56;
-  --inner-panel-color: #32343C;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -52,4 +44,4 @@ svg {
   .hide-tablet {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=global.css.map */
