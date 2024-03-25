@@ -48,11 +48,7 @@ svg {
   display: none;
 }
 
-.toggle-menu {
-  transform: translateX(0);
-}
-
-@media only screen and (max-width: 620px) {
+@media only screen and (min-width: 620px) {
   .hide-tablet {
     display: none;
   }
@@ -105,6 +101,10 @@ aside {
   transition: transform 0.6s;
   transform: translateX(100%);
 }
+aside a {
+  color: white;
+  font-size: 2.6rem;
+}
 aside img {
   background: white;
   width: 30px;
@@ -118,9 +118,9 @@ aside ul {
 aside ul li {
   margin-bottom: 1.5em;
 }
-aside ul li a {
-  color: white;
-  font-size: 2.6rem;
+
+.toggle-menu {
+  transform: translateX(0);
 }
 
 /* Sales stats */
@@ -208,12 +208,155 @@ h1 {
   gap: 1em;
 }
 .customers ul .user-left img {
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
 }
 .customers ul .user-info strong {
   display: block;
+}
+
+/* Tablet */
+@media only screen and (min-width: 620px) {
+  .signout {
+    display: block;
+    padding: 0.7em;
+    background-color: var(--secondary-color);
+    border-radius: 0.3em;
+  }
+  .header-right nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+  aside {
+    position: inherit;
+    height: auto;
+    background: unset;
+    width: auto;
+    padding: 2em;
+    margin-top: 2em;
+    transform: unset;
+    text-align: inherit;
+    transition: unset;
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+  }
+  aside img {
+    background: unset;
+    cursor: unset;
+  }
+  aside a {
+    font-size: 1.8rem;
+  }
+  aside nav ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  aside nav ul li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  aside nav ul li img {
+    display: block !important;
+  }
+  /* Main area */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+  }
+  .earnings, .customers {
+    grid-column: 1/3;
+  }
+  .extra-stats ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 0 2em;
+  }
+  .col2 {
+    display: flex;
+    gap: 2em;
+  }
+  aside {
+    width: 10%;
+    flex-grow: 3;
+    min-width: 250px;
+    padding: 2em;
+  }
+  aside nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  aside nav ul {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2em;
+  }
+  aside nav ul li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  aside nav ul li img {
+    display: block !important;
+  }
+  /* main */
+  main {
+    flex-grow: 2;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+  }
+  .extra-stats {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+  }
+  .extra-stats ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  .premium {
+    display: block;
+    background: var(--inner-panel-color);
+    padding: 2em;
+    color: white;
+    border-radius: 0.3em;
+  }
+  .premium header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .premium header h3 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .premium header img {
+    width: 20px;
+  }
+  .premium p {
+    line-height: 150%;
+  }
 }/*# sourceMappingURL=main.css.map */
